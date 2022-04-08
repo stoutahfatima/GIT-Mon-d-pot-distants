@@ -1,0 +1,118 @@
+/***********************************************/
+/*********************page Css******************/
+/***********************************************/  
+nav {
+    background-color:black;
+    height: 50px;
+    margin-bottom: 05px; 
+}
+a{
+    color: rgb(255, 255, 255);
+}
+.banner {
+   display: flex;
+   padding: 10px 20px;
+   list-style-type:none;
+   
+}
+
+.banner li{
+    margin-left:10px;
+}
+#jardin{
+    text-align: center;
+    margin-top: -30px;
+    font-size: x-large;
+}
+
+.img-fluid{
+    width:150px;
+    height:auto;  
+}
+
+#promo{
+    width:100%;
+    height:auto;
+}
+
+#contenu{
+    
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    
+} 
+#colonne{
+    float: right;
+    background-color:rgb(175, 172, 172);
+    order: 1; 
+    width:21.875rem;
+} 
+
+.banner{
+    margin-top:5px;
+}  
+#tableau{
+    width:800px;
+}
+
+#contact{
+    width:auto;
+}
+/********************************************************/
+/********************RESPONSIF***************************/
+/********************************************************/
+
+@media screen and (max-width: 768px) {
+    .banner {
+        display:inline;
+        
+        list-style-type:none;
+        font-size:smaller;
+        
+     }
+     #contenu{
+        width:auto;
+        font-size:smaller;
+     }
+     #colonne{
+         display: none;
+     }
+     
+     #contenu{
+        width:auto;
+        font-size: small;
+    }
+     
+    .img-fluid{
+        width:70px;
+        height:auto;
+
+    }
+    nav {
+        background-color:black;
+        height: auto;
+
+    }
+
+    #jardin{
+       
+        font-size: medium;
+        margin-top:-20px;
+    }
+
+    #tableau{
+        width:auto;
+        font-size: smaller;
+    }
+
+
+    #tableau img{
+        width:30%;
+        height:30%;
+    }
+    #contact{
+        width:auto;
+        font-size:smaller;
+    }
+  }

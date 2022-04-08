@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+ <html lang="fr"><!--début balise html-->
+<head><!--début balise head-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK rel=stylesheet type="text/css" href="assets/css/style.css">
+    <title>Conatct</title>
+</head><!--fin balise head-->
+<!--début balise body-->
+<body>
+<header><!--début balise header-->
+    <img src="src/img/jarditou_logo.jpg" class="img-fluid" alt="logo jarditou" title="Jarditou">
+
+    <div id="jardin"> Tout le jardin </div>   
+     <nav ><!--début balise nav-->
+            <ul class="banner"><!--début balise ul -->
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="tableau.html">Tableau</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul><!--fin balise ul -->
+     </nav><!--fin balie nav-->       
+     <img src="src/img/promotion.jpg" alt="promotion"  id="promo">
+    
+</header><!--fin balise header-->
+<!--début balise form-->
+<form action="http://bienvu.net/script.php" method="get" id="formulaire">
+
+    <div id="contact">
+
+      <p>* Ces zones sont obligatoires</p>
+<fieldset><!--début balise fieldset-->
+        <legend>Vos coordonnées</legend>
+        <label for="nom">Nom* :</label> <input type="text" id="nom" name="nom"><br>
+        <label for="prenom">Prenom* :</label> <input type="text" id="prenom" name="prenom"><br><br>
+        <label for="sexe">Sexe* :</label> <input type="radio" id="sexe" name="sexe" value="feminin" >Féminin
+                                          <input type="radio" name="sexe" value="masculin" >Masculin
+                                          <br><br>
+        <label for="ddn">Date de naissance* :</label> <input type="date" id="ddn"  name="ddn" id="ddn" ><br>
+        <label for="cp">Code postal* :</label> <input type="text" id="cp" name="cp"><br>
+        <label for="adresse">Adresse :</label> <input type="text" id="adresse" name="adresse"><br>
+        <label for="ville">Ville :</label> <input type="text" id="ville" name="ville"><br>
+        <label for="email">Email* :</label> <input type="text" id="email" name="email" placeholder="dave.loper@afpa.fr"><br>                     </fieldset><!--fin balise fieldset-->
+    <br>
+<fieldset><!--début fieldset pour la demande-->
+        <legend>Votre demande</legend>
+        <label for="sujet"> Sujet* : </label>  
+        <select id="sujet"><!--début balise select-->
+            <option value="selectionner">Veuillez séléctionner un sujet</option>
+            <option value="Mes commandes">Mes commandes</option>
+            <option value="question">Question sur un produit</option>
+            <option value="Réclamation">Réclamation</option>
+            <option value="Autres">Autres</option>
+        </select><br>
+        <!--fin balise select-->
+        <label for="question">Votre question* : </label>
+        <textarea name="question"  id="question" rows="2" cols="20" ></textarea><br>
+    
+    </fieldset><!--fin fieldset pour la demande-->
+    <br>
+        <input type="checkbox" id="cgu"  name="cgu"> <label for="cgu">J'accepte le traitement informatique de ce formulaire.</label><br><br>
+ 
+        <button type="submit">Envoyer</button>    <button type="reset">Annuler</button><br>
+    </form> <!--balise form fin du formulaire-->
+    <hr>
+    </div> 
+    <footer><!-- début de la balise footer -->
+        
+    <nav>
+        <ul class="banner"><!--début balise ul -->
+            <li><a href="mentionlegal.html">Mentions légales</a></li>
+            <li><a href="horaires.html">Horaires</a></li>
+            <li><a href="plandusite.html">Plan du site</a></li>
+        </ul><!--fin balise ul-->
+    </nav>
+    
+    </footer><!-- fin de la balise footer -->
+    <!-- fin de la balise body -->
+    </body>
+    <!-- fin document html -->
+    </html>
