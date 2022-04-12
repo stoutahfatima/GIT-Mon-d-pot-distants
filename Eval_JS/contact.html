@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+ <html lang="fr"><!--début document html-->
+<head><!--début balise head-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice de formulaire</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="contact.js"></script>
+</head><!--fin balise head-->
+<!--début balise body-->
+<body>
+<header><!--début balise header-->
+    <img src="jarditou-images/jarditou_logo.jpg" alt="logo jarditou" width="215" height="90">
+
+        <p>La qualité depuis 70 ans</p> 
+<nav >
+    <ul class="form-inline"><!--début balise ul -->
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tableau.html">Tableau</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul><!--fin balise ul -->
+    <img src="jarditou-images/promotion.jpg" width="100%" height="auto" >   
+</nav>
+</header><!--fin balise header-->
+<form action="http://bienvu.net/script.php"  name="Form" id="formulaire" method="post" onsubmit="return enregistrer()">
+    <p>* Ces zones sont obligatoires</p>
+<fieldset><!--début balise fieldset-->
+        <legend>Vos coordonnées</legend>
+        <div class="box">
+        <label for="nom">Nom* :</label> <input type="text" name="nom"id="nomination">
+        <div class="error" id="nomErr"></div>
+    </div>
+        <br>
+        <div class="box">
+        <label for="Prenom">Prenom* :</label> <input type="text" name="prenom"id="prenomination">
+        <div class="error" id="prenomErr"></div>
+    </div>
+        <br><br>
+        <div class="box">
+        <label for="sexe">Sexe* :</label><div class="form-inline" id="genre"> 
+                                          <input type="radio" name="sexe" value="feminin" >Féminin
+                                          <input type="radio" name="sexe" value="masculin" >Masculin
+                                        </div>
+                                        <div class="error" id="sexeErr"></div>
+                                        </div>   
+                                          <br><br>
+         <div class="box">                                 
+        <label for="ddn">Date de naissance* :</label> <input class="form-inline" type="date" name="ddn" id="ddn" >
+        <div class="error" id="dateErr"></div>
+           </div>
+        <br>
+        <div class="box">                              
+        <label for="cp">Code postal* :</label> <input type="text" name="cp" id="cp" >
+        <div class="error" id="postalErr"></div>
+            </div>
+        <br>
+        <div class="box">
+        <label for="adresse">Adresse :</label> <input type="text" name="adresse" id="adresse">
+        <div class="error" id="adresseErr"></div>
+    </div>
+        <br>
+        <div class="box">
+        <label for="ville">Ville :</label> <input type="text" name="ville" id="ville">
+        <div class="error" id="villeErr"></div>
+    </div>
+        <br>
+        <div class="box">
+        <label for="email">Email* :</label> <input type="text" name="email" id="email" >
+        <div class="error" id="emailErr"></div>
+         </div>
+        <br>                   
+</fieldset><!--fin balise fieldset-->
+    <br>
+<fieldset><!--début balise fieldset-->
+        <legend>Votre demande</legend>
+        <div class="box">
+        <label > Sujet* : </label>  
+        <select for="sujet" id="sujet">
+            <option value="selectionner">Veuillez séléctionner un sujet</option>
+            <option value="Mes commandes">Mes commandes</option>
+            <option value="question">Question sur un produit</option>
+            <option value="Réclamation">Réclamation</option>
+            <option value="Autres">Autres</option>
+        </select>
+        <div class="error" id="sujetErr"></div>
+    </div>
+        <br>
+        <div class="box">
+        <label >Votre question* : </label>
+        <textarea for="question"  name="question"  id="question" rows="2" cols="20"></textarea>
+        <div class="error" id="questionError"></div>
+    </div>
+        <br>
+    
+</fieldset><!--fin balise fieldset-->
+    <br>
+    <div class="box form-inline">
+           <input type="checkbox" id="cgu"  name="cgu">
+           <label for="cgu">J'accepte le traitement informatique de ce formulaire.</label>
+           <div class="error" id="cguErr"></div>
+        </div>
+           <br><br>
+           <div class="box">
+           <button type="submit">Envoyer</button>    <button type="reset">Annuler</button>
+           <div class="error" id="questionErr"></div>
+        </div>
+</form> <!-- fin blalise form-->
+    <hr>
+<footer><!-- début balise footer -->
+        <nav>
+         <ul>
+            <li><a href="mentionlegal.html">Mentions légales</a></li>
+            <li><a href="horaires.html">Horaires</a></li>
+            <li><a href="plandusite.html">Plan du site</a></li>
+         </ul>
+         </nav>
+</footer><!-- fin balise footer -->
+    <!-- fin balise body -->
+</body>
+    <!-- fin document html -->
+</html>
